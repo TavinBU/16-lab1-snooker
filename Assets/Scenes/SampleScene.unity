@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScore: 0
-  ballpPrefab: {fileID: 1603880202065316563, guid: fabfb3909ddb75b48a74d595eda74eed, type: 3}
+  ballPrefab: {fileID: 2336803573816238452, guid: 9a2cbb3b8c0eca34fb8fc6fc075fa972, type: 3}
   ballPositions:
   - {fileID: 663852154}
   - {fileID: 148615833}

@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     [SerializeField] private int playerScore;
-    [SerializeField] private GameObject ballpPrefab;
+    [SerializeField] private GameObject ballPrefab;
     [SerializeField] private GameObject[] ballPositions;
     
     
@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
         setBalls(BallColors.Yellow,2);
         setBalls(BallColors.Green,3);
         setBalls(BallColors.Brown,4);
+        setBalls(BallColors.Blue,5);
+        setBalls(BallColors.Pink,6);
+        setBalls(BallColors.Black,7);
         
     }
     
@@ -37,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     void setBalls(BallColors color, int pos)
     {
-        GameObject ball = Instantiate(ballpPrefab, ballPositions[pos].transform.position, Quaternion.identity);
+        GameObject ball = Instantiate(ballPrefab, ballPositions[pos].transform.position, Quaternion.identity);
         Ball b = ball.GetComponent<Ball>();
         b.SetColorAndPoint(color);
 

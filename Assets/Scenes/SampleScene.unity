@@ -340,8 +340,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScore: 0
-  ballpPrefab: {fileID: 2336803573816238452, guid: 9a2cbb3b8c0eca34fb8fc6fc075fa972, type: 3}
-  ballPositions: []
+  ballPrefab: {fileID: 2336803573816238452, guid: 9a2cbb3b8c0eca34fb8fc6fc075fa972, type: 3}
+  ballPositions:
+  - {fileID: 663852154}
+  - {fileID: 148615833}
+  - {fileID: 400976880}
+  - {fileID: 845059219}
+  - {fileID: 1913369963}
+  - {fileID: 1452730673}
+  - {fileID: 2017307902}
+  - {fileID: 1901762815}
 --- !u!1 &400976880
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 720812680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

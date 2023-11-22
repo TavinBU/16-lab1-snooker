@@ -339,6 +339,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2e9b33fd54f664591370f5dc206b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScore: 0
+  ballpPrefab: {fileID: 1603880202065316563, guid: fabfb3909ddb75b48a74d595eda74eed, type: 3}
+  ballPositions:
+  - {fileID: 663852154}
+  - {fileID: 148615833}
+  - {fileID: 400976880}
+  - {fileID: 845059219}
+  - {fileID: 1913369963}
+  - {fileID: 1452730673}
+  - {fileID: 2017307902}
+  - {fileID: 1901762815}
 --- !u!1 &400976880
 GameObject:
   m_ObjectHideFlags: 0

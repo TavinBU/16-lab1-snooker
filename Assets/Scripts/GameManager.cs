@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
         setBalls(BallColors.Yellow,2);
         setBalls(BallColors.Green,3);
         setBalls(BallColors.Brown,4);
+        setBalls(BallColors.Blue,5);
+        setBalls(BallColors.Pink,6);
+        setBalls(BallColors.Black,7);
         
     }
     

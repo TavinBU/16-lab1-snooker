@@ -352,6 +352,7 @@ MonoBehaviour:
   - {fileID: 1901762815}
   cueBall: {fileID: 1254707671}
   ballLine: {fileID: 307108276}
+  force: 50
   xInput: 0
 --- !u!1 &307108276
 GameObject:

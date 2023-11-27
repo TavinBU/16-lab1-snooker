@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     [SerializeField] private int playerScore;
+    public int PlayrScore { get; set; }
     [SerializeField] private GameObject ballPrefab;
     [SerializeField] private GameObject[] ballPositions;
 
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject camera;
 
+    [SerializeField] private TMP_Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +33,10 @@ public class GameManager : MonoBehaviour
         camera = Camera.main.gameObject;
         CameraBehindBall();
         
+        UpdatrScoreText();
+        
         //set ball on the table
-        setBalls(BallColors.White,0);
+        //setBalls(BallColors.White,0);
         setBalls(BallColors.Red,1); 
         setBalls(BallColors.Yellow,2);
         setBalls(BallColors.Green,3);
@@ -40,8 +46,13 @@ public class GameManager : MonoBehaviour
         setBalls(BallColors.Black,7);
         
     }
-    
-    
+
+    public void UpdatrScoreText()
+    {
+      scoreText.text = $"Player Scoer: {PlayrScore}";
+    }
+
+
 
     // Update is called once per frame
     void Update()

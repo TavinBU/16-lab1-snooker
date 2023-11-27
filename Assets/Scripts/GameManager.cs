@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
     void RotateBall()
     {
         xInput = Input.GetAxis("Horizontal");
-        cueBall.transform.Rotate(new Vector3(0f,xInput/10,0f)) ;
+        cueBall.transform.Rotate(new Vector3(0f,xInput/2,0f)) ;
 
     }
 
